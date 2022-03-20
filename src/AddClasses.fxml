@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Text fill="#b00f6f" layoutX="25.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add/ Edit Class" textAlignment="CENTER" wrappingWidth="153.33673095703125">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="25.0" layoutY="101.0" prefHeight="167.0" prefWidth="335.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="18.0" prefWidth="108.0" text="Name :" textFill="#b00f6f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="22.0" prefWidth="203.0" text="Maximum members : " textFill="#b00f6f" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldClassName" promptText="name" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldMaxMembers" promptText="maximum members" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldIndexClassesEdit" opacity="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="bntClassAddEdit" layoutX="518.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleClickMe" stylesheets="@styles.css" text="Add Class" textFill="#b00f6f" />
+      <Button fx:id="bntClassEdit" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleClickMe" stylesheets="@styles.css" text="Edit Class" textFill="#b00f6f" />
+   </children>
+</AnchorPane>

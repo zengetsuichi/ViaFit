@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="12.0.2" class="java.beans.XMLDecoder">
+ <object class="ScheduledClasses">
+  <void property="date">
+   <object class="Date" id="Date0">
+    <void property="day">
+     <int>14</int>
+    </void>
+    <void property="month">
+     <int>9</int>
+    </void>
+    <void property="year">
+     <int>2020</int>
+    </void>
+   </object>
+  </void>
+  <void property="duration">
+   <double>1.0</double>
+  </void>
+  <void property="instructor">
+   <object class="Instructor">
+    <void property="address">
+     <string>Damager</string>
+    </void>
+    <void property="email">
+     <string>lollol</string>
+    </void>
+    <void property="name">
+     <string>Gosia</string>
+    </void>
+    <void property="phoneNumber">
+     <string></string>
+    </void>
+    <void property="surname">
+     <string>Drygala</string>
+    </void>
+   </object>
+  </void>
+  <void property="members">
+   <object class="java.util.ArrayList" id="ArrayList0">
+    <void method="add">
+     <object class="Member">
+      <void property="address">
+       <string>Damager</string>
+      </void>
+      <void property="email">
+       <string>blabla@gmail.com</string>
+      </void>
+      <void property="name">
+       <string>Gosia</string>
+      </void>
+      <void property="phoneNumber">
+       <string>601409321</string>
+      </void>
+      <void property="surname">
+       <string>Drygala</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Member">
+      <void property="address">
+       <string>Damager</string>
+      </void>
+      <void property="email">
+       <string>blablabla@gmail.com</string>
+      </void>
+      <void property="name">
+       <string>Karlo</string>
+      </void>
+      <void property="phoneNumber">
+       <string>601409321</string>
+      </void>
+      <void property="surname">
+       <string>Drygala</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="time">
+   <object class="Time" id="Time0">
+    <void property="hour">
+     <int>16</int>
+    </void>
+    <void property="minute">
+     <int>30</int>
+    </void>
+   </object>
+  </void>
+ </object>
+ <object class="ScheduledClasses">
+  <void property="date">
+   <object idref="Date0"/>
+  </void>
+  <void property="duration">
+   <double>1.0</double>
+  </void>
+  <void property="instructor">
+   <object class="Instructor">
+    <void property="address">
+     <string>Damager</string>
+    </void>
+    <void property="email">
+     <string>lol</string>
+    </void>
+    <void property="name">
+     <string>Karlo</string>
+    </void>
+    <void property="phoneNumber">
+     <string>2357647</string>
+    </void>
+    <void property="surname">
+     <string>Drygala</string>
+    </void>
+   </object>
+  </void>
+  <void property="members">
+   <object idref="ArrayList0"/>
+  </void>
+  <void property="time">
+   <object idref="Time0"/>
+  </void>
+ </object>
+</java>
